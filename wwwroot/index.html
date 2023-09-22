@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>мониторинг</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<h3 id="zap">Запрос</h3>
+<form action="javascript:void(0);" method="POST" onsubmit="addItem()" >
+    <input type="text" id="add-name" placeholder="New to-do">
+    <input type="submit"  value="Отправить" id="otpr">
+</form>
+
+<table>
+    <tr>
+        <th>Система</th>
+        <th>Значение °C</th>
+        <th>Норм. °C</th>
+        <th>Значение Rh</th>
+    </tr>
+    <tbody id="todos"></tbody>
+</table>
+
+<input type="button" value="Получить" id="poluchka">
+<a href="https://maddysonshow.github.io/VladiK/" target="_blank" id="about">About</a>
+
+<script src="js/site.js" asp-append-version="true"></script>
+<script type="text/javascript">
+    auth();
+</script>
+</body>
+</html>
